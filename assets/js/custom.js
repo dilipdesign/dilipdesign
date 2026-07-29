@@ -13,6 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
     contactForms.forEach(function (form) {
         form.addEventListener('submit', function (e) {
             e.preventDefault();
+            if (!form.checkValidity()) {
+                form.classList.add('was-validated');
+                return;
+            }
+
             const submitBtn = form.querySelector('button[type="submit"]');
             if (submitBtn) submitBtn.disabled = true;
 
@@ -35,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     alert('Thanks — your message has been sent.');
                 }
                 form.reset();
+                form.classList.remove('was-validated');
             }).catch(function (err) {
                 console.error(err);
                 alert('There was an error sending the message. Please try again.');
