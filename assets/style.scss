@@ -1,0 +1,27 @@
+@import 'scss/_theme';
+@import 'scss/_header';
+@import 'scss/_footer';
+@import 'scss/_fonts';
+
+:root {
+    --bs-warning: #E36E24;
+
+    .btn {
+        border-radius: 1.2rem;
+        padding: 10px 16px;
+    }
+}
+
+.text-warning {
+    color: var(--bs-warning) !important;
+}
+
+badge {
+    background: #0a58ca;
+    color: #fff;
+    padding: 2px 10px 4px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+}

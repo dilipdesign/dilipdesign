@@ -1,0 +1,133 @@
+
+
+.my-img {
+    height: 100vh;
+}
+
+body {
+  padding-top: 80px;
+}
+
+
+/* Ensure the track spans wide enough to hold both content pieces */
+.marquee-track {
+  width: max-content;
+  animation: marquee-scroll 15s linear infinite;
+}
+
+/* Force each block to take up full available width */
+.min-w-100 {
+  min-width: 100%;
+}
+
+/* Prevent layout breaking if text is grabbed */
+.marquee-content {
+  user-select: none;
+}
+
+/* Optional: Pause animation when a user hovers over it */
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f8f9fa;
+  color: #111;
+}
+
+.case-study-hero {
+  background: #ffffff;
+}
+
+.case-study-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.8rem, 4vw, 4.5rem);
+  margin-bottom: 1.2rem;
+}
+
+.case-study-summary h5,
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.case-study-section {
+  background: #f8f9fa;
+}
+
+.case-study-section.bg-light {
+  background: #f3f5f7;
+}
+
+.case-study-card,
+.metric-card,
+.timeline-list,
+.case-study-summary {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.case-study-card:hover,
+.metric-card:hover,
+.timeline-list:hover,
+.case-study-summary:hover {
+  transform: translateY(-3px);
+}
+
+.case-study-card p,
+.case-study-summary p,
+.timeline-list p,
+.metric-card p {
+  color: #495057;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.metric-card h3 {
+  font-size: 2.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline-list li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.timeline-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e36e24;
+}
+
+@media (max-width: 991.98px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Keyframe for a seamless right-to-left infinite scroll loop */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

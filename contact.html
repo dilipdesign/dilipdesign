@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Dilip Maheshwari</title>
+<link rel="stylesheet" href="assets/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/myLogo.png" alt="Logo" height="36" class="d-inline-block align-text-top">
+                Dilip Maheshwari
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="about.html">About Me</a>
+                    <a class="nav-link d-none" href="blog.html">Blog</a>
+                    <a class="nav-link active" href="contact.html">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="py-5">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="row">
+                    <h1 class="section-title text-center">Let's Connect</h1>
+                    <p class="lead text-center mb-4">Drop a quick note or connect with me on LinkedIn. I’m available for design, UX, and product conversations.</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap mb-5">
+                        <a href="https://www.linkedin.com/in/dilip-maheshwari/" target="_blank" class="btn btn-dark">Connect on LinkedIn</a>
+                        <a href="#contactForm" class="btn btn-outline-dark">Send Message</a>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <div class="text-center mb-5 mt-5">
+                        <h2 class="h3">Send a Message</h2>
+                        <p class="text-muted mx-auto" style="max-width:640px;">I’d love to hear about your project, collaboration ideas, or any design challenge you’re solving. Share a few details below and I’ll respond with a friendly, thoughtful follow-up.</p>
+                    </div>
+    
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <form id="contactForm" class="contact-form" action="https://formsubmit.co/cd7afd8b4fcfe4dde5d5f18c6e71e619" method="POST" novalidate>
+                                <!-- Using formsubmit.co to forward form submissions to dilip.uiux.designer@gmail.com -->
+                                <input type="hidden" name="_subject" value="Portfolio contact">
+                                <input type="hidden" name="_captcha" value="false">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" name="name" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" name="email" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Contact number</label>
+                                        <input type="tel" name="phone" class="form-control">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">City</label>
+                                        <input type="text" name="city" class="form-control">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">Country</label>
+                                        <input type="text" name="country" class="form-control">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Message</label>
+                                        <textarea name="message" class="form-control" rows="6" required></textarea>
+                                    </div>
+                                    <div class="col-12 text-end">
+                                        <button type="submit" class="btn btn-dark">Send message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Success modal -->
+<div class="modal fade" id="contactSuccessModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Message sent</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Thanks — your message has been sent. I'll get back to you soon.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>
