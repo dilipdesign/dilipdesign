@@ -3,7 +3,14 @@
   height: 100vh; }
 
 body {
-  padding-top: 80px; }
+  padding-top: 80px;
+  background: #ebebeb; }
+
+.pt-100 {
+  padding-top: 100px; }
+
+.mt-100 {
+  margin-top: 100px; }
 
 /* Ensure the track spans wide enough to hold both content pieces */
 .marquee-track {
@@ -24,7 +31,6 @@ body {
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #f8f9fa;
   color: #111; }
 
 .case-study-hero {
@@ -973,3 +979,382 @@ badge {
   margin-left: 10px; }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Sports case-study layout additions */
+.sports-case-study {
+  --cs-bg: #ebebeb;
+  --cs-surface: #ffffff;
+  --cs-text: #111111;
+  --cs-muted: #686868;
+  --cs-border: #deded9;
+  --cs-accent: #5758d9;
+  --cs-accent-light: #ececff;
+  padding-top: 0;
+  background: var(--cs-bg);
+  color: var(--cs-text);
+}
+
+.sports-case-study .cs-page {
+  max-height: none;
+  overflow: visible;
+  background: var(--cs-bg);
+}
+
+.sports-case-study .cs-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(247, 247, 244, .9);
+  border-bottom: 1px solid var(--cs-border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.sports-case-study .cs-nav-inner {
+  min-height: 68px;
+}
+
+.sports-case-study .cs-nav-back,
+.sports-case-study .cs-nav-back:hover,
+.sports-case-study .cs-nav-link:hover,
+.sports-case-study .cs-nav-link.cs-nav-active {
+  color: var(--cs-text);
+}
+
+.sports-case-study .case-study-hero {
+  padding: 7.5rem 0 6rem !important;
+  background: var(--cs-bg);
+}
+
+.sports-case-study .case-study-title {
+  max-width: 800px;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: .98;
+  letter-spacing: -.06em;
+}
+
+.sports-case-study .case-study-hero .text-warning {
+  color: var(--cs-accent) !important;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.sports-case-study .case-study-hero .lead {
+  max-width: 680px;
+  color: #505050;
+  line-height: 1.75;
+}
+
+.sports-case-study .case-study-hero .badge {
+  background: var(--cs-accent-light) !important;
+  border: 0 !important;
+  color: var(--cs-accent) !important;
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+.sports-case-study .case-study-section {
+  padding: 7.5rem 0 !important;
+  background: var(--cs-bg);
+}
+
+.sports-case-study .case-study-section.bg-light {
+  background: #e9e9e4 !important;
+}
+
+.sports-case-study .section-title {
+  font-size: clamp(2.2rem, 4vw, 3.7rem);
+  line-height: 1;
+  letter-spacing: -.05em;
+}
+
+.sports-case-study .case-study-summary,
+.sports-case-study .case-study-card {
+  background: var(--cs-surface) !important;
+  border: 1px solid var(--cs-border) !important;
+  border-radius: 1.5rem !important;
+  box-shadow: none !important;
+}
+
+.sports-case-study .case-study-card,
+.sports-case-study .case-study-summary {
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.sports-case-study .case-study-card:hover,
+.sports-case-study .case-study-summary:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, .08) !important;
+}
+
+.sports-case-study .case-study-hero > .container,
+.sports-case-study .case-study-section > .container {
+  animation: sports-fade-up .8s ease both;
+}
+
+.sports-case-study .case-study-hero .case-study-title {
+  animation: sports-title-in .9s cubic-bezier(.2, .8, .2, 1) both;
+}
+
+.sports-case-study .case-study-card,
+.sports-case-study .case-study-summary,
+.sports-case-study .accordion-item,
+.sports-case-study .image-placeholder,
+.sports-case-study .cs-image-placeholder,
+.sports-case-study .cs-wide-placeholder,
+.sports-case-study .cs-content-placeholder {
+  animation: sports-fade-up .7s ease both;
+}
+
+.sports-case-study .case-study-card:nth-child(2),
+.sports-case-study .accordion-item:nth-child(2) {
+  animation-delay: .08s;
+}
+
+.sports-case-study .case-study-card:nth-child(3),
+.sports-case-study .accordion-item:nth-child(3) {
+  animation-delay: .16s;
+}
+
+.sports-case-study .case-study-card p,
+.sports-case-study .case-study-summary li {
+  color: var(--cs-muted);
+  line-height: 1.7;
+}
+
+.sports-case-study .accordion {
+  border-top: 1px solid var(--cs-border);
+}
+
+.sports-case-study .accordion-item {
+  border: 0;
+  border-bottom: 1px solid var(--cs-border);
+}
+
+.sports-case-study .accordion-button {
+  padding: 1.5rem 1.75rem;
+  background: var(--cs-surface);
+  color: var(--cs-text);
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.sports-case-study .accordion-button:not(.collapsed) {
+  background: var(--cs-accent-light);
+  color: var(--cs-accent);
+}
+
+.sports-case-study .accordion-body {
+  padding: 1.5rem 1.75rem 2rem;
+  color: var(--cs-muted);
+  line-height: 1.7;
+}
+
+.sports-case-study .image-placeholder {
+  position: relative;
+  display: flex;
+  min-height: 300px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(135deg, #deded9, #f8f8f5);
+  border: 2px dashed #aaa;
+  border-radius: 1.5rem;
+  color: var(--cs-muted);
+  text-align: center;
+}
+
+.sports-case-study .image-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 1px solid rgba(87, 88, 217, .25);
+  border-radius: 1rem;
+}
+
+.sports-case-study .image-placeholder-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.sports-case-study .image-placeholder i {
+  display: block;
+  margin-bottom: .75rem;
+  color: var(--cs-accent);
+  font-size: 2rem;
+}
+
+.sports-case-study .image-placeholder strong {
+  display: block;
+  color: var(--cs-text);
+  font-size: .75rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.sports-case-study .image-placeholder span {
+  display: block;
+  margin-top: .35rem;
+  font-size: .75rem;
+}
+
+.sports-case-study .cs-image-placeholder,
+.sports-case-study .cs-wide-placeholder,
+.sports-case-study .cs-content-placeholder {
+  position: relative;
+  display: flex;
+  min-height: 280px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(135deg, #deded9, #f8f8f5);
+  border: 2px dashed #aaa;
+  border-radius: 1.5rem;
+  color: var(--cs-muted);
+  text-align: center;
+}
+
+.sports-case-study .cs-image-placeholder {
+  min-height: 300px;
+}
+
+.sports-case-study .cs-wide-placeholder {
+  min-height: 320px;
+}
+
+.sports-case-study .cs-image-placeholder::before,
+.sports-case-study .cs-wide-placeholder::before,
+.sports-case-study .cs-content-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 1px solid rgba(87, 88, 217, .25);
+  border-radius: 1rem;
+}
+
+.sports-case-study .cs-image-placeholder .cs-image-content,
+.sports-case-study .cs-wide-placeholder .cs-image-content,
+.sports-case-study .cs-content-placeholder .cs-image-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.sports-case-study .cs-image-placeholder .cs-image-icon,
+.sports-case-study .cs-wide-placeholder .cs-image-icon,
+.sports-case-study .cs-content-placeholder .cs-image-icon {
+  width: auto;
+  height: auto;
+  margin: 0 0 .75rem;
+  border: 0;
+  color: var(--cs-accent);
+  font-size: 2rem;
+}
+
+.sports-case-study .cs-image-placeholder .cs-image-title,
+.sports-case-study .cs-wide-placeholder .cs-image-title,
+.sports-case-study .cs-content-placeholder .cs-image-title {
+  color: var(--cs-text);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.sports-case-study #contact {
+  background: #111 !important;
+}
+
+.sports-case-study .sports-footer {
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 0 !important;
+}
+
+.sports-case-study .sports-footer::before {
+  content: "";
+  position: absolute;
+  width: 22rem;
+  height: 22rem;
+  right: -8rem;
+  bottom: -12rem;
+  border: 1px solid rgba(87, 88, 217, .45);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2rem rgba(87, 88, 217, .08), 0 0 0 4rem rgba(87, 88, 217, .04);
+}
+
+.sports-case-study .sports-footer .section-title {
+  color: #fff;
+}
+
+.sports-case-study .sports-footer p {
+  max-width: 650px;
+  color: #aaa;
+  line-height: 1.75;
+}
+
+.sports-case-study .sports-footer .btn {
+  position: relative;
+  z-index: 1;
+  border-radius: 999px;
+  padding: .8rem 1.4rem;
+  transition: transform .25s ease, background-color .25s ease, color .25s ease;
+}
+
+.sports-case-study .sports-footer .btn:hover {
+  transform: translateY(-3px);
+  background: #fff;
+  color: #111;
+}
+
+@keyframes sports-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sports-title-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sports-case-study *,
+  .sports-case-study *::before,
+  .sports-case-study *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .sports-case-study .case-study-hero,
+  .sports-case-study .case-study-section {
+    padding-top: 4.5rem !important;
+    padding-bottom: 4.5rem !important;
+  }
+
+  .sports-case-study .case-study-title {
+    font-size: 3.25rem;
+  }
+
+  .sports-case-study .cs-nav-inner {
+    min-height: 60px;
+  }
+}

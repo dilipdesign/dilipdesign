@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study | Sports Event Management Platform</title>
+
+  <!-- Same CSS used by Employee Self-Service case study -->
+  <link rel="stylesheet" href="assets/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <meta name="description"
+        content="A UX case study covering product design, design system development, documentation, and design-to-code collaboration for a complex sports event management platform." />
+
+
+
+</head>
+
+<body class="pt-0">
+
+<main class="cs-page">
+
+  <!-- =====================================================
+       CASE STUDY NAVIGATION
+       Same structure as Employee Self-Service
+       ===================================================== -->
+  <header class="cs-nav">
+    <div class="container">
+      <div class="cs-nav-inner">
+
+        <a href="index.html" class="cs-nav-back">
+          <span class="cs-nav-arrow" aria-hidden="true">←</span>
+          <span>Return to Work</span>
+        </a>
+
+        <nav class="cs-nav-links" aria-label="Case study navigation">
+          <a href="#cs-overview" class="cs-nav-link cs-nav-active">Overview</a>
+          <a href="#cs-context" class="cs-nav-link">Context</a>
+          <a href="#cs-challenge" class="cs-nav-link">Challenge</a>
+          <a href="#cs-role" class="cs-nav-link">My Role</a>
+          <a href="#cs-process" class="cs-nav-link">Process</a>
+          <a href="#cs-experience" class="cs-nav-link">Design System</a>
+          <a href="#cs-code" class="cs-nav-link">Design System</a>
+          <a href="#cs-outcome" class="cs-nav-link">Outcome</a>
+          <a href="#cs-reflection" class="cs-nav-link">Reflection</a>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
+  <section id="cs-overview" class="cs-hero">
+    <div class="container">
+
+      <div class="row align-items-center g-5 mt-0">
+
+        <div class="col-lg-7">
+
+          <div class="cs-hero-content cs-reveal">
+
+            <div class="cs-eyebrow">
+              Sports Event Management · Enterprise Application
+            </div>
+
+            <h1 class="cs-hero-title">
+              Designing<br>
+              the System
+            </h1>
+
+            <p class="cs-lead">
+              Designing UX for a complex sports event management platform while building
+              and maintaining a reusable design system across interconnected modules.
+            </p>
+
+            <p class="cs-hero-note">
+              This work brings together product UX, design system thinking,
+              documentation, and my practical understanding of HTML, CSS, SCSS and Bootstrap.
+            </p>
+
+            <p class="cs-hero-note">
+              Client details are kept confidential. The case study focuses on my UX,
+              design-system and design-to-code contribution.
+            </p>
+
+            <div class="cs-hero-meta">
+              <span class="cs-tag">UX Design</span>
+              <span class="cs-tag">Design System</span>
+              <span class="cs-tag">Enterprise Application</span>
+              <span class="cs-tag">HTML / CSS / SCSS</span>
+              <span class="cs-tag">Bootstrap</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-5">
+
+          <!-- Replace with your strongest Sports Event Management screen -->
+          <figure class="cs-image cs-reveal">
+              <div class="cs-image-content">
+                <div class="cs-image-icon">＋</div>
+                <div class="cs-image-title">Sports Event Management Dashboard</div>
+                <div class="cs-image-note">Add your main sports event management dashboard screenshot here</div>
+              </div>
+            </figure>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       PROJECT SNAPSHOT
+       ===================================================== -->
+  <section class="cs-facts">
+    <div class="container">
+
+      <div class="row g-4">
+
+        <div class="col-6 col-lg">
+          <div class="cs-fact">
+            <div class="cs-fact-label">Role</div>
+            <div class="cs-fact-value">UX / Product Designer</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg">
+          <div class="cs-fact">
+            <div class="cs-fact-label">Focus</div>
+            <div class="cs-fact-value">Product UX</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg">
+          <div class="cs-fact">
+            <div class="cs-fact-label">Current Focus</div>
+            <div class="cs-fact-value">Design System</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg">
+          <div class="cs-fact">
+            <div class="cs-fact-label">Platform</div>
+            <div class="cs-fact-value">Web Application</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg">
+          <div class="cs-fact">
+            <div class="cs-fact-label">Technical Experience</div>
+            <div class="cs-fact-value">HTML · CSS · SCSS · Bootstrap</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       CONTEXT
+       ===================================================== -->
+  <section class="cs-section" id="cs-context">
+
+    <div class="container">
+
+      <div class="row g-5">
+
+        <div class="col-lg-5">
+
+          <div class="cs-reveal">
+
+            <div class="cs-eyebrow">
+              01 / Context
+            </div>
+
+            <h2 class="cs-section-title">
+              One platform.<br>
+              Multiple complex<br>
+              workflows.
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-7">
+
+          <div class="cs-copy cs-reveal cs-delay-1">
+
+            <p>
+              The Sports Event Management platform supports a wide range of interconnected
+              event operations, including Event Management, Venue Management, Team Management,
+              Roster Management, Entry Management, Finance and Administration.
+            </p>
+
+            <p>
+              Each module has its own business rules and workflows, while many interface
+              patterns are shared across the product.
+            </p>
+
+            <p>
+              My work spans product UX and the design system. I identify recurring patterns
+              across modules and turn them into reusable components, interaction rules and
+              documented guidelines.
+            </p>
+
+            <p>
+              Alongside design, my experience with HTML, CSS, SCSS and Bootstrap gives me
+              an implementation-aware perspective when creating components and collaborating
+              with developers.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       CHALLENGE
+       ===================================================== -->
+  <section class="cs-section" id="cs-challenge">
+
+    <div class="container">
+
+      <div class="cs-reveal">
+
+        <div class="cs-eyebrow">
+          02 / Challenge
+        </div>
+
+        <h2 class="cs-section-title">
+          Creating consistency<br>
+          across a complex<br>
+          product.
+        </h2>
+
+        <p class="cs-lead mt-3">
+          The challenge was not simply to create consistent-looking screens.
+          The goal was to establish reusable patterns with clear behavior and
+          documentation that could work across multiple product modules.
+        </p>
+
+      </div>
+
+
+      <div class="row g-4 mt-3">
+
+        <div class="col-lg-4">
+
+          <article class="cs-challenge cs-reveal">
+
+            <div class="cs-number">01</div>
+
+            <h3>
+              Multiple modules
+            </h3>
+
+            <p>
+              Different product areas required their own workflows while sharing
+              common navigation, actions, tables, forms and interaction patterns.
+            </p>
+
+          </article>
+
+        </div>
+
+
+        <div class="col-lg-4">
+
+          <article class="cs-challenge cs-reveal cs-delay-1">
+
+            <div class="cs-number">02</div>
+
+            <h3>
+              Reusable patterns
+            </h3>
+
+            <p>
+              Repeated patterns needed to be identified, consolidated and turned
+              into reusable components rather than redesigned independently.
+            </p>
+
+          </article>
+
+        </div>
+
+
+        <div class="col-lg-4">
+
+          <article class="cs-challenge cs-reveal cs-delay-2">
+
+            <div class="cs-number">03</div>
+
+            <h3>
+              Design-to-code alignment
+            </h3>
+
+            <p>
+              Components needed to be practical for implementation and easy to
+              communicate with developers during handoff and collaboration.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       MY ROLE
+       ===================================================== -->
+  <section class="cs-section" id="cs-role">
+
+    <div class="container">
+
+      <div class="row g-5">
+
+        <div class="col-lg-4">
+
+          <div class="cs-reveal">
+
+            <div class="cs-eyebrow">
+              03 / My Role
+            </div>
+
+            <h2 class="cs-section-title">
+              Senior UX<br>
+              Designer<br>
+              & Design System
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-8">
+
+          <div class="cs-role-intro cs-reveal">
+
+            <p>
+              I work across product UX and the design system, helping translate
+              complex requirements into clear product experiences while creating
+              reusable patterns for the wider application.
+            </p>
+
+          </div>
+
+
+          <div class="row g-3 mt-3">
+
+            <div class="col-md-6">
+              <div class="cs-role-card">
+                <span>01</span>
+                <h3>Product UX</h3>
+                <p>
+                  Designing complex workflows, information architecture,
+                  interactions and high-fidelity product experiences.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="cs-role-card">
+                <span>02</span>
+                <h3>Design System</h3>
+                <p>
+                  Identifying reusable components, variants, states, interaction
+                  patterns and cross-module design rules.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="cs-role-card">
+                <span>03</span>
+                <h3>Documentation</h3>
+                <p>
+                  Creating guidelines for components, navigation, icons, actions,
+                  behavior and usage across the product.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="cs-role-card">
+                <span>04</span>
+                <h3>Cross-functional Collaboration</h3>
+                <p>
+                  Worked closely with UI and development teams to clarify
+                  component behaviour, review implementation and maintain design consistency.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       PROCESS
+       ===================================================== -->
+  <section class="cs-section" id="cs-process">
+
+    <div class="container">
+
+      <div class="row g-5">
+
+        <div class="col-lg-4">
+
+          <div class="cs-reveal">
+
+            <div class="cs-eyebrow">
+              04 / Process
+            </div>
+
+            <h2 class="cs-section-title">
+              From product<br>
+              patterns to<br>
+              scalable<br>
+              design rules.
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-8">
+
+          <div class="cs-process">
+
+            <div class="cs-process-item cs-reveal">
+
+              <div class="cs-process-number">
+                01
+              </div>
+
+              <h3>
+                Audit
+              </h3>
+
+              <p>
+                Review existing modules and identify components, patterns and
+                behaviors that are repeated or used locally.
+              </p>
+
+            </div>
+
+
+            <div class="cs-process-item cs-reveal">
+
+              <div class="cs-process-number">
+                02
+              </div>
+
+              <h3>
+                Consolidate
+              </h3>
+
+              <p>
+                Compare patterns across modules and determine what should become
+                shared system components and what should remain module-specific.
+              </p>
+
+            </div>
+
+
+            <div class="cs-process-item cs-reveal">
+
+              <div class="cs-process-number">
+                03
+              </div>
+
+              <h3>
+                Define
+              </h3>
+
+              <p>
+                Establish component anatomy, variants, states, behavior, icons,
+                navigation rules and interaction guidance.
+              </p>
+
+            </div>
+
+
+            <div class="cs-process-item cs-reveal">
+
+              <div class="cs-process-number">
+                04
+              </div>
+
+              <h3>
+                Document
+              </h3>
+
+              <p>
+                Add the patterns and usage rules to the UI/UX guidelines so they
+                can be referenced by designers and developers.
+              </p>
+
+            </div>
+
+
+            <div class="cs-process-item cs-reveal">
+
+              <div class="cs-process-number">
+                05
+              </div>
+
+              <h3>
+                Iterate
+              </h3>
+
+              <p>
+                Continue refining the system as new product requirements and
+                module patterns are introduced.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       DESIGN SYSTEM
+       ===================================================== -->
+  <section class="cs-section cs-dark" id="cs-experience">
+
+    <div class="container">
+
+      <div class="cs-reveal">
+
+        <div class="cs-eyebrow">
+          05 / Design System
+        </div>
+
+        <h2 class="cs-section-title">
+          Building a shared<br>
+          design language.
+        </h2>
+
+        <p class="cs-lead mt-3">
+          The design system brings recurring product patterns into a common
+          language so that components, interactions and visual decisions remain
+          consistent across modules.
+        </p>
+
+      <div class="row g-4 mt-4">
+        <div class="col-md-6">
+          <div class="cs-role-card">
+            <span>01</span>
+            <h3>Reusable Components</h3>
+            <p>
+              Identifying common UI patterns across Event Management, Venue Management,
+              Team Management and other modules, then defining reusable structures and variants.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="cs-role-card">
+            <span>02</span>
+            <h3>Navigation & Interaction</h3>
+            <p>
+              Establishing consistent rules for left navigation, module tabs, section tabs,
+              breadcrumbs, drawers, dialogs and destination links.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="cs-role-card">
+            <span>03</span>
+            <h3>Tables, Actions & Forms</h3>
+            <p>
+              Defining repeatable patterns for table actions, filters, forms, states and
+              common interaction behaviors used throughout the product.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="cs-role-card">
+            <span>04</span>
+            <h3>Icons & Documentation</h3>
+            <p>
+              Building an icon dictionary and documenting tooltip meaning, action behavior,
+              destinations and usage so designers and developers have a shared reference.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+
+      <div class="row g-4 mt-3">
+
+        <div class="col-lg-4">
+
+          <article class="cs-principle cs-reveal">
+
+            <div class="cs-principle-number">
+              01
+            </div>
+
+            <h3>
+              Components
+            </h3>
+
+            <p>
+              Tables, forms, dialogs, drawers, tabs, navigation, filters,
+              actions and other reusable UI patterns.
+            </p>
+
+          </article>
+
+        </div>
+
+
+        <div class="col-lg-4">
+
+          <article class="cs-principle cs-reveal cs-delay-1">
+
+            <div class="cs-principle-number">
+              02
+            </div>
+
+            <h3>
+              Behavior & States
+            </h3>
+
+            <p>
+              Defining how components behave across default, hover, active,
+              disabled, validation and other relevant states.
+            </p>
+
+          </article>
+
+        </div>
+
+
+        <div class="col-lg-4">
+
+          <article class="cs-principle cs-reveal cs-delay-2">
+
+            <div class="cs-principle-number">
+              03
+            </div>
+
+            <h3>
+              Icons & Guidelines
+            </h3>
+
+            <p>
+              Maintaining a consistent icon language with clear meaning,
+              tooltip guidance and destination rules.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+
+      <!-- Replace these images with actual Figma design-system screenshots -->
+      <div class="row g-4 mt-5">
+
+        <div class="col-lg-6">
+
+          <figure class="cs-image cs-reveal">
+              <div class="cs-image-content">
+                <div class="cs-image-icon">＋</div>
+                <div class="cs-image-title">Design System Components</div>
+                <div class="cs-image-note">Add your Figma component library / component audit screenshot here</div>
+              </div>
+            </figure>
+
+        </div>
+
+
+        <div class="col-lg-6">
+
+          <figure class="cs-image cs-reveal">
+              <div class="cs-image-content">
+                <div class="cs-image-icon">＋</div>
+                <div class="cs-image-title">Design System Guidelines</div>
+                <div class="cs-image-note">Add your UI/UX guideline or documentation screenshot here</div>
+              </div>
+            </figure>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       DESIGN SYSTEM DETAIL
+       ===================================================== -->
+  <section class="cs-section">
+
+    <div class="container">
+
+      <div class="row g-5">
+
+        <div class="col-lg-4">
+
+          <div class="cs-reveal">
+
+            <div class="cs-eyebrow">
+              System Thinking
+            </div>
+
+            <h2 class="cs-section-title">
+              Beyond the<br>
+              component.
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-7 offset-lg-1">
+
+          <div class="cs-copy cs-reveal">
+
+            <p>
+              A design system is not only a collection of Figma components.
+              It also needs clear rules for when a pattern should be used,
+              how it behaves, and how it connects with the rest of the product.
+            </p>
+
+            <p>
+              My documentation work therefore covers both the visual component
+              and the product behavior around it.
+            </p>
+
+            <p>
+              Examples include table action headers, left navigation drawers,
+              module tabs and sections, dialogs, icons, breadcrumbs and
+              destination links.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       DESIGN-TO-CODE
+       ===================================================== -->
+  <section class="cs-section" id="cs-code">
+
+    <div class="container">
+
+      <div class="row g-5">
+
+        <div class="col-lg-4">
+
+          <div class="cs-reveal">
+
+            <div class="cs-eyebrow">
+              06 / Design System
+            </div>
+
+            <h2 class="cs-section-title">
+              Designing with<br>
+              implementation<br>
+              in mind.
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-8">
+
+          <div class="cs-role-intro cs-reveal">
+
+            <p>
+              My experience with HTML, CSS, SCSS and Bootstrap gives me a
+              practical understanding of how interface decisions translate
+              into frontend implementation.
+            </p>
+
+          </div>
+
+
+          <div class="row g-3 mt-3">
+
+            <div class="col-md-6">
+              <div class="cs-role-card">
+                <span>01</span>
+                <h3>HTML</h3>
+                <p>
+                  Understanding semantic structure and how interface content
+                  translates into reusable page structures.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="cs-role-card">
+                <span>02</span>
+                <h3>CSS</h3>
+                <p>
+                  Practical understanding of layout, spacing, typography,
+                  responsive behavior and visual implementation.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="cs-role-card">
+                <span>03</span>
+                <h3>SCSS</h3>
+                <p>
+                  Experience working with structured styles and reusable
+                  styling patterns for maintainable interfaces.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="cs-role-card">
+                <span>04</span>
+                <h3>Bootstrap</h3>
+                <p>
+                  Familiarity with responsive grid, utility classes and
+                  established frontend patterns.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       DESIGN-TO-CODE VISUAL
+       ===================================================== -->
+  <section class="cs-section cs-dark">
+
+    <div class="container">
+
+      <div class="cs-reveal">
+
+        <div class="cs-eyebrow">
+          From Design to Implementation
+        </div>
+
+        <h2 class="cs-section-title">
+          A closer connection<br>
+          between design and code.
+        </h2>
+
+        <p class="cs-lead mt-3">
+          Frontend knowledge helps me think about component structure,
+          responsive behavior and implementation feasibility while designing.
+        </p>
+
+      </div>
+
+
+      <div class="row g-4 mt-4">
+
+        <div class="col-lg-6">
+
+          <figure class="cs-image cs-reveal">
+              <div class="cs-image-content">
+                <div class="cs-image-icon">＋</div>
+                <div class="cs-image-title">Figma Component</div>
+                <div class="cs-image-note">Add a Figma component / variant screenshot here</div>
+              </div>
+            </figure>
+
+        </div>
+
+
+        <div class="col-lg-6">
+
+          <figure class="cs-image cs-reveal">
+              <div class="cs-image-content">
+                <div class="cs-image-icon">＋</div>
+                <div class="cs-image-title">HTML / CSS / SCSS / Bootstrap</div>
+                <div class="cs-image-note">Add a frontend implementation screenshot here</div>
+              </div>
+            </figure>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       OUTCOME
+       ===================================================== -->
+  <section class="cs-section cs-outcome" id="cs-outcome">
+
+    <div class="container">
+
+      <div class="cs-reveal">
+
+        <div class="cs-eyebrow">
+          07 / Outcome
+        </div>
+
+        <h2 class="cs-section-title">
+          A stronger foundation<br>
+          for a growing product.
+        </h2>
+
+        <p class="cs-lead mt-3">
+          The design-system work establishes a shared foundation
+          for consistency across the platform while keeping product design
+          connected to implementation.
+        </p>
+
+      </div>
+
+
+      <div class="row g-4 mt-4">
+
+        <div class="col-md-4">
+
+          <div class="cs-outcome-card cs-reveal">
+
+            <div class="cs-outcome-number">
+              UX
+            </div>
+
+            <div class="cs-outcome-label">
+              Complex product workflows translated into clear and consistent experiences.
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+          <div class="cs-outcome-card cs-reveal cs-delay-1">
+
+            <div class="cs-outcome-number">
+              System
+            </div>
+
+            <div class="cs-outcome-label">
+              Reusable components, interaction patterns and documentation across modules.
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+          <div class="cs-outcome-card cs-reveal cs-delay-2">
+
+            <div class="cs-outcome-number">
+              Code
+            </div>
+
+            <div class="cs-outcome-label">
+              Design decisions informed by practical HTML, CSS, SCSS and Bootstrap experience.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="cs-outcome-note cs-reveal">
+
+        <strong>
+          Why this matters:
+        </strong>
+
+        <span>
+          The project allows me to work across product UX, system-level design
+          and implementation-aware collaboration rather than treating each
+          interface as an isolated screen.
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       REFLECTION
+       ===================================================== -->
+  <section class="cs-section" id="cs-reflection">
+
+    <div class="container">
+
+      <div class="row g-5">
+
+        <div class="col-lg-4">
+
+          <div class="cs-reveal">
+
+            <div class="cs-eyebrow">
+              08 / Reflection
+            </div>
+
+            <h2 class="cs-section-title">
+              Designing beyond<br>
+              individual screens.
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-8">
+
+          <div class="cs-reflection cs-reveal">
+
+            <h3>
+              Product thinking + system thinking + implementation awareness.
+            </h3>
+
+            <p>
+              Working on a complex enterprise product has reinforced that good
+              UX is not only about solving the immediate screen-level problem.
+              It is also about creating patterns that can work consistently
+              across the wider product.
+            </p>
+
+            <p>
+              Building the design system has given me the opportunity to
+              move from designing individual experiences to thinking about
+              reusable components, shared behavior, documentation and
+              governance.
+            </p>
+
+            <p>
+              My background in HTML, CSS, SCSS and Bootstrap adds another
+              perspective: understanding how design decisions can be translated
+              into practical frontend implementation and communicating those
+              decisions effectively with developers.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+</main>
+
+
+<!-- Bootstrap JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YY3n5c9tZ3T0kY6G5Rk4c9T6F4j8"
+        crossorigin="anonymous"></script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* Scroll reveal */
+  const revealElements = document.querySelectorAll(".cs-reveal");
+
+  if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver(
+      function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("cs-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.12,
+        rootMargin: "0px 0px -40px 0px"
+      }
+    );
+
+    revealElements.forEach(function (element) {
+      revealObserver.observe(element);
+    });
+  } else {
+    revealElements.forEach(function (element) {
+      element.classList.add("cs-visible");
+    });
+  }
+
+  /* Active case-study navigation */
+  const sections = document.querySelectorAll(".cs-page section[id]");
+  const navLinks = document.querySelectorAll(".cs-nav-link");
+
+  if ("IntersectionObserver" in window) {
+    const navObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+
+          const currentId = entry.target.getAttribute("id");
+
+          navLinks.forEach(function (link) {
+            link.classList.remove("cs-nav-active");
+
+            if (link.getAttribute("href") === "#" + currentId) {
+              link.classList.add("cs-nav-active");
+            }
+          });
+        });
+      },
+      {
+        rootMargin: "-35% 0px -55% 0px"
+      }
+    );
+
+    sections.forEach(function (section) {
+      navObserver.observe(section);
+    });
+  }
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
